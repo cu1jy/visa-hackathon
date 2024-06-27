@@ -1,13 +1,8 @@
 "use client";
+import Link from "next/link";
 import React from 'react'
 
 const Navbar = () => {
-    // const [isClick, setisClick] = useState(false);
-
-    // const toggleNavbar = () => {
-    //     setisClick(!isClick)
-    // }
-
     return (
         <>
             <nav>
@@ -25,6 +20,7 @@ const Navbar = () => {
                                 <a href='/' className='text-black rounded-lg p-2'>
                                     Activity
                                 </a>
+
                                 <a href='/' className='text-black rounded-lg p-2'>
                                     Rewards
                                 </a>
@@ -36,13 +32,6 @@ const Navbar = () => {
                                 </a>
                             </div>
                         </div>
-                        {/* <div className='md:hidden flex items-center'>
-                            <button className='inline-flex items-center justify-center p-2 rounded-md text-black
-                            focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'
-                                onClick={toggleNavbar}>
-
-                            </button>
-                        </div> */}
                     </div>
                 </div>
             </nav>
