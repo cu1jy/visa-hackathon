@@ -17,19 +17,18 @@ const Navbar = () => {
                         </div>
                         <div className=' md:block'>
                             <div className='ml-4 flex items-center space-x-4'>
-                                <a href='/' className='text-black rounded-lg p-2'>
+                                <Link href='/activity' className='text-black rounded-lg p-2'>
                                     Activity
-                                </a>
-
-                                <a href='/' className='text-black rounded-lg p-2'>
+                                </Link>
+                                <Link href='/' className='text-black rounded-lg p-2'>
                                     Rewards
-                                </a>
-                                <a href='/' className='text-black rounded-lg p-2'>
+                                </Link>
+                                <Link href='/' className='text-black rounded-lg p-2'>
                                     Sustainability
-                                </a>
-                                <a href='/' className='text-black rounded-lg p-2'>
+                                </Link>
+                                <Link href='/' className='text-black rounded-lg p-2'>
                                     Logout
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
