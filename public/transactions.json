@@ -1,0 +1,32 @@
+[
+    {
+        "date": "Jun 28",
+        "amount": 139.59,
+        "location": "ASDA",
+        "type": "GROCERY STORES/SUPERMARKETS"
+    },
+    {
+        "date": "Jun 28",
+        "amount": 20.68,
+        "location": "COMPANY SHOP LTD",
+        "type": "GROCERY STORES/SUPERMARKETS"
+    },
+    {
+        "date": "Jun 25",
+        "amount": 60.92,
+        "location": "WM MORRISON",
+        "type": "GROCERY STORES/SUPERMARKETS"
+    },
+    {
+        "date": "Jun 18",
+        "amount": 54.62,
+        "location": "WM MORRISON",
+        "type": "GROCERY STORES/SUPERMARKETS"
+    },
+    {
+        "date": "Jun 14",
+        "amount": 101.95,
+        "location": "WM MORRISON",
+        "type": "GROCERY STORES/SUPERMARKETS"
+    }
+]
