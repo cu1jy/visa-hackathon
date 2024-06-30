@@ -143,19 +143,48 @@ export default function Home() {
                     </div>
                     {/* right side of main */}
                     <div className='col-span-2'>
-                        <div className='h-48 w-full bg-gray-100 rounded-xl mt-16'>
-                            <p className='font-semibold pt-3 pl-3'>
+                        <div className='h-auto w-full bg-gray-100 rounded-xl mt-16'>
+                            <p className='font-semibold pt-4 pl-4 mb-2'>
                                 Activity Summary
                             </p>
-                            <p className='pl-3'>
+                            <p className='pl-4 text-sm opacity-70'>
                                 Recent Activity (Jun 11, 2023 - Today)
                             </p>
-                            <hr className='bg-gray-500 my-4 w-full'></hr>
+                            <hr className='h-px mt-4 w-full'></hr>
+                            <div className='opacity-70 w-full p-4'>
+                                <div className='flex justify-between mb-2'>
+                                    <p className='text-left text-sm '>Last Statement Balance</p>
+                                    <p className=' text-right text-sm '>$585.23</p>
+                                </div>
+                                <div className='flex justify-between mb-2'>
+                                    <p className='text-left text-sm '>Posted Transactions</p>
+                                    <p className=' text-right text-sm '>+ $624.79</p>
+                                </div>
+                                <div className='flex justify-between'>
+                                    <p className='text-left text-sm '>Payments & Credits</p>
+                                    <p className='text-green-800 text-right text-sm '>- $0.00</p>
+                                </div>
+                            </div>
+                            <hr className='h-px mx-4'></hr>
+                            <div className='opacity-70 w-full p-4'>
+                                <div className='flex justify-between mb-2 text-base font-semibold'>
+                                    <p className='text-left'>Current Balance</p>
+                                    <p className=' text-right '>$377.76</p>
+                                </div>
+                                <div className='flex justify-between mb-2 text-sm'>
+                                    <p className='text-left'>Pending Transactions</p>
+                                    <p className=' text-right '>$0.00</p>
+                                </div>
+                                <div className='flex justify-between mb-2 text-sm'>
+                                    <p className='text-left'>Next Statement Closing Date</p>
+                                    <p className=' text-right '>Jul 10, 2023</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </div >
 
-            </main>
+            </main >
         </>
     );
 }
