@@ -11,7 +11,7 @@ const Navbar = () => {
                         <div className='flex items-center'>
                             <div className='flex-shrink-0'>
                                 <a href='/' className='text-green-900 font-bold'>
-                                    ECOCARD
+                                    CARDECO
                                 </a>
                             </div>
                         </div>

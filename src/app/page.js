@@ -97,7 +97,7 @@ export default function Home() {
             <hr className="h-px my-4 bg-gray-300 border-0 opacity-30"></hr>
             <div className="mb-7">
               <p className="text-lg font-semibold text-white opacity-60 mb-1">
-                Your Sustainbility Score:
+                Your Sustainability Score:
               </p>
               <p className="text-3xl font-bold text-white inline mr-2">
                 37
@@ -116,7 +116,7 @@ export default function Home() {
               <p className="text-sm text-white opacity-50 inline">15% from last month</p>
             </div>
             <Link href={'/sustainability'} className="text-sm text-white opacity-50 font-semibold absolute bottom-4">
-              View your full sustainability analysis
+              View your full sustainability report
             </Link>
           </div>
         </div>

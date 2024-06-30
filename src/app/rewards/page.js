@@ -15,39 +15,56 @@ const page = () => {
             chartStatus.destroy();
         }
 
+        const doughnutTextPlugin = {
+            id: 'doughnutText',
+            beforeDraw(chart) {
+                const { width, height, ctx } = chart;
+                ctx.restore();
+                const fontSize = 1.5;
+                ctx.font = `${fontSize}em sans-serif`;
+                ctx.textBaseline = 'middle';
+
+                const text = '$23.14',
+                    textX = 60,
+                    textY = 190;
+
+                ctx.fillText(text, textX, textY);
+                ctx.save();
+            },
+        };
+
         const chart = new Chart(ctx, {
-            type: 'pie',
+            type: 'doughnut',
             data: {
-                labels: ['2%', '1% Unlimited', '1% Sustainable'],
+                labels: ['2% Gas Stations & Grocery Stores Bonus', '1% Unlimited Bonus', '1% Sustainable Bonus'],
                 datasets: [
                     {
                         data: [30, 3, 3],
                         backgroundColor: [
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(255, 99, 132)',
+                            'rgba(54, 162, 235)',
+                            'rgba(144, 238, 144)',
 
                         ],
                         borderColor: [
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)',
+                            'rgba(255, 255, 255)',
+                            'rgba(255, 255, 255)',
+                            'rgba(255, 255, 255)',
                         ],
-                        borderWidth: 0,
+                        borderWidth: 1,
                     },
                 ],
             },
             options: {
                 responsive: true,
+                cutout: 60,
                 plugins: {
                     legend: {
                         position: 'right',
                     },
                 },
             },
+            plugins: [doughnutTextPlugin],
         });
     }, []);
 
@@ -59,21 +76,25 @@ const page = () => {
                     <p className=' text-3xl font-semibold text-center pb-5'>
                         User,<br></br> Here is your cash back summary.
                     </p>
-                    <div>
+                    <div className='mb-10'>
                         <button className='w-48 inline bg-green-950 text-white text-opacity-70 rounded-full p-2 mr-5'>
-                            Cash Back
+                            Cash Back Earned
                         </button>
                         <button className='w-48 inline bg-gray-100 text-gray-400 rounded-full p-2'>
                             Available to Redeem
                         </button>
                     </div>
-                    <div className='w-full flex items-center justify-center h-72 bg-gray-100 mt-5'>
+                    <p className='text-base opacity-70'>
+                        Total cash back earned this year as of June 10, 2023:
+                    </p>
+
+                    <div className='h-96 w-96 '>
                         <canvas id='myChart' ref={canvas}></canvas>
                     </div>
                 </div>
 
-                <div className='h-full w-full bg-green-950 py-8 px-80'>
-                    <h1 className='font-semibold text-2xl text-white opacity-50 italic mb-5'>
+                <div className='h-auto w-full bg-green-950 py-8 px-80'>
+                    <h1 className='font-semibold text-2xl text-white opacity-70 italic mb-5'>
                         How do I earn cash back?
                     </h1>
                     <p className='text-white opacity-50 text-base'>
