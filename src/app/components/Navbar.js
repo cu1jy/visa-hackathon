@@ -20,10 +20,10 @@ const Navbar = () => {
                                 <Link href='/activity' className='text-black rounded-lg p-2'>
                                     Activity
                                 </Link>
-                                <Link href='/' className='text-black rounded-lg p-2'>
+                                <Link href='/rewards' className='text-black rounded-lg p-2'>
                                     Rewards
                                 </Link>
-                                <Link href='/' className='text-black rounded-lg p-2'>
+                                <Link href='/sustainability' className='text-black rounded-lg p-2'>
                                     Sustainability
                                 </Link>
                                 <Link href='/' className='text-black rounded-lg p-2'>

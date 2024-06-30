@@ -81,16 +81,13 @@ export default function Home() {
               Earn 2% cash back at Gas Stations and Restaurants on up to $1000 in combined purchases each quarter, automatically. Plus, you earn unlimited 1% cash back on all other purchases.
               Earn an additional 1% cash back for every sustainable purchase you make.
             </p>
-            <Link href={''} className="text-sm text-green-800 font-semibold absolute bottom-4">
+            <Link href={'/rewards'} className="text-sm text-green-800 font-semibold absolute bottom-4">
               View your cash back summary
             </Link>
           </div>
 
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            className="group h-96 w-80 rounded-3xl border border-transparent px-5 py-4 bg-green-950"
-            target="_blank"
-            rel="noopener noreferrer"
+          <div
+            className="group h-96 w-80 relative rounded-3xl border border-transparent px-5 py-4 bg-green-950"
           >
             <h2 className={`mb-3 text-2xl font-semibold text-white`}>
               Sustainability:{" "}
@@ -99,7 +96,10 @@ export default function Home() {
             <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-white`}>
               We are dedicated to helping our users become more sustainable through every purchase.
             </p>
-          </a>
+            <Link href={'/sustainability'} className="text-sm text-white opacity-50 font-semibold absolute bottom-4">
+              View your sustainability analysis
+            </Link>
+          </div>
         </div>
       </main>
     </>
