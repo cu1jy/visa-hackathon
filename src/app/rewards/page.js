@@ -77,7 +77,7 @@ const page = () => {
                         How do I earn cash back?
                     </h1>
                     <p className='text-white opacity-50 text-base'>
-                        Earn 2% cash back at Gas Stations and Restaurants on up to $1000 in combined purchases each quarter, automatically. Plus, you earn unlimited 1% cash back on all other purchases.
+                        Earn 2% cash back at Gas Stations and Grocery Stores on up to $1000 in combined purchases each quarter, automatically. Plus, you earn unlimited 1% cash back on all other purchases.
                         Earn an additional 1% cash back for every sustainable purchase you make.
                     </p>
                 </div>

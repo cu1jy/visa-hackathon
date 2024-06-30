@@ -3,6 +3,8 @@ import Image from "next/image";
 import Navbar from './components/Navbar'
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { FaArrowUp } from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa";
 
 
 export default function Home() {
@@ -78,7 +80,7 @@ export default function Home() {
               Ways to Redeem
             </button>
             <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-              Earn 2% cash back at Gas Stations and Restaurants on up to $1000 in combined purchases each quarter, automatically. Plus, you earn unlimited 1% cash back on all other purchases.
+              Earn 2% cash back at Gas Stations and Grocery Stores on up to $1000 in combined purchases each quarter, automatically. Plus, you earn unlimited 1% cash back on all other purchases.
               Earn an additional 1% cash back for every sustainable purchase you make.
             </p>
             <Link href={'/rewards'} className="text-sm text-green-800 font-semibold absolute bottom-4">
@@ -93,11 +95,28 @@ export default function Home() {
               Sustainability:{" "}
             </h2>
             <hr className="h-px my-4 bg-gray-300 border-0 opacity-30"></hr>
-            <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-white`}>
-              We are dedicated to helping our users become more sustainable through every purchase.
-            </p>
+            <div className="mb-7">
+              <p className="text-lg font-semibold text-white opacity-60 mb-1">
+                Your Sustainbility Score:
+              </p>
+              <p className="text-3xl font-bold text-white inline mr-2">
+                37
+              </p>
+              <FaArrowUp className="text-white opacity-50 inline text-sm mr-1"></FaArrowUp>
+              <p className="text-sm text-white opacity-50 inline">5 points from last month</p>
+            </div>
+            <div>
+              <p className="text-lg font-semibold text-white opacity-60 mb-1">
+                Your Current Emissions:
+              </p>
+              <p className="text-3xl font-bold text-white inline mr-2">
+                270 kg
+              </p>
+              <FaArrowDown className="text-white opacity-50 inline text-sm mr-1"></FaArrowDown>
+              <p className="text-sm text-white opacity-50 inline">15% from last month</p>
+            </div>
             <Link href={'/sustainability'} className="text-sm text-white opacity-50 font-semibold absolute bottom-4">
-              View your sustainability analysis
+              View your full sustainability analysis
             </Link>
           </div>
         </div>
